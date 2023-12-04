@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background-color: var(--Dark-Blue);
+}
+
+.container {
+  width: 25%;
+  height: auto;
+  background-color: var(--Dark-Grayish-Blue);
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.advice-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#advice,
+#advice-id {
+  color: var(--Neon-Green);
+  padding: 10px 0;
+  letter-spacing: 0.2rem;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#quote-text,
+#quote-par {
+  color: var(--Light-Cyan);
+  font-weight: 800;
+  line-height: 2.2rem;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.line {
+  background-image: url(./images/pattern-divider-mobile.svg);
+  width: 295px;
+  height: 16px;
+  margin: 25px auto;
+}
+
+#dot-btn {
+  height: 50px;
+  width: 50px;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 20px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  border: none;
+}
+
+#dot-btn:hover {
+  box-shadow: 0px 0px 14px 8px rgba(82,255,168,0.75);
+}
+
+#icon-dice {
+  background-image: url(./images/icon-dice.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 50%;
+  }
+
+  .line {
+    background-image: url(./images/pattern-divider-desktop.svg);
+    width: 444px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 40%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (min-width: 1440px) {
+  .container {
+    width: 35%;
+  }
+}
